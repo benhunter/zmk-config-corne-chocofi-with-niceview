@@ -36,10 +36,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp EXCLAMATION   &kp AT             &kp HASH           &kp DOLLAR    &kp PERCENT     &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT   &kp DOWN       &kp UP        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-&kp LSHFT   &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans          &trans     &trans         &trans        &trans                &trans                 &trans
-                                                 &trans             &trans        &trans          &trans     &trans         &trans
+&kp TAB    &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans     &trans           &trans  &trans    &kp BACKSPACE  &kp DELETE     &trans     &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+&kp LSHFT  &trans           &trans  &trans    &trans         &trans         &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT             &kp HOME               &kp END
+                                    &trans    &trans         &trans         &trans     &trans          &trans
             >;
         };
 
@@ -53,17 +53,17 @@
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0       &trans
 &trans  &trans        &trans        &trans        &trans        &trans          &trans        &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&trans  &trans        &trans        &trans        &trans        &trans          &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC          &kp PIPE           &kp TILDE
+&trans  &trans        &trans        &trans        &trans        &trans          &kp UNDER     &kp PLUS      &kp LBRC      &kp PAGE_UP       &kp PAGE_DOWN      &kp TILDE
                                     &trans        &trans        &trans          &trans        &trans        &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans      &trans            &trans             &trans             &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                                 &trans             &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
