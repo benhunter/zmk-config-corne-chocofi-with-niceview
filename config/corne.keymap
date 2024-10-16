@@ -38,7 +38,7 @@
             bindings = <
 &kp TILDE  &kp EXCLAMATION  &kp AT         &kp HASH  &kp DOLLAR     &kp PERCENT    &kp CARET  &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans     &trans           &kp LEFT_META  &trans    &kp BACKSPACE  &kp DELETE     &trans     &kp UNDERSCORE  &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
-&kp LSHFT  &trans           &trans         &trans    &trans         &trans         &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT             &kp HOME               &kp END
+&kp LSHFT  &trans           &trans         &trans    &trans         &kp ENTER      &kp LEFT   &kp DOWN        &kp UP        &kp RIGHT             &kp HOME               &kp END
                                            &trans    &trans         &trans         &trans     &mo 3           &trans
             >;
         };
@@ -69,6 +69,4 @@
     };
 };
 
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
+&nice_view_spi { cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>; };
